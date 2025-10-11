@@ -70,3 +70,6 @@ If you find this template helpful, give it a ⭐️ and share it with your fello
 
 Happy coding! 💻
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
