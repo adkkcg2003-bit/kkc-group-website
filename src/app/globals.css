@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #1e40af;          /* deep blue - main buttons, headings */
+  --color-primary-light: #3b82f6;    /* lighter blue for hover */
+  --color-primary-very-light: #eff6ff; /* very light blue background tint */
+
+  --color-secondary: #065f46;        /* dark green - accents */
+  --color-secondary-light: #10b981;  /* green for highlights */
+
+  --color-text: #1e293b;             /* dark slate text */
+  --color-text-light: #475569;
+  --color-bg: #ffffff;               /* pure white main bg */
+  --color-bg-light: #f8fafc;         /* very light gray for sections */
+}
+
+/* Global base styles */
+@layer base {
+  html, body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  section {
+    @apply py-16 md:py-20;
+    background-color: var(--color-bg-light);
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-bold text-gray-800;
+  }
+}
+
+/* Smooth hover effects for buttons & cards */
+button, a.button-like, .card {
+  transition: all 0.3s ease;
+}
+
+button:hover, a.button-like:hover, .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.15);
+}

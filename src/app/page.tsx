@@ -7,8 +7,8 @@ import Testimonial from '@/app/components/Home/Testimonial'
 import Newsletter from '@/app/components/Home/Newsletter'
 import { Metadata } from 'next'
 import ContactForm from './components/Contact/Form'
-export const metadata: Metadata = {
-  title: 'Si Educational',
+export const metadata = {
+  title: 'KKC Group of Institutions',
 }
 
 export default function Home() {
